@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extended Date Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .button-container {
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Extended Date Demo</h2>
+    <div class="container">
+        <div>
+            <h3>Текущая дата текстом</h3>
+            <button onclick="displayFormattedDate()">Показать</button>
+            <p id="formattedDate"></p>
+        </div>
+        <div>
+            <h3>Проверка будущей даты</h3>
+            <button onclick="checkFutureDate()">Проверить</button>
+            <p id="futureResult"></p>
+        </div>
+        <div>
+            <h3>Проверка високосного года</h3>
+            <button onclick="checkLeapYear()">Проверить</button>
+            <p id="leapYearResult"></p>
+        </div>
+        <div>
+            <h3>Следующая дата</h3>
+            <button onclick="displayNextDate()">Показать</button>
+            <p id="nextDate"></p>
+        </div>
+    </div>
+
+    <!-- Подключение JavaScript файла -->
+    <script src="script.js"></script>
+</body>
+</html>
